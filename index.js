@@ -7,6 +7,7 @@ client.commands = new Map();
 
 client.once('ready', () => {
     console.log('\x1b[32m%s\x1b[0m', `✅ Le client est en ligne`);
+    require("./Handler/CommandHandler.js")(client)
 });
 
 loadCommands(client);
